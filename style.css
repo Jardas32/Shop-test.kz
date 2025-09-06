@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.searchbg {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 3px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 4px;
+}
+
+input {
+    background-color: transparent;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+}
+
+.btnSearch {
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: rgb(229, 229, 229);
+    color: rgb(97, 97, 97);
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.btnSearch:hover {
+    background-color: rgb(208, 208, 208);
+    color: #050505;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.countCard {
+    background-color: red;
+    color: #ffffff;
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    font-size: 11px;
+    padding: 2px 4px;
+    border-radius: 100%;
+}
+
+.nav li a {
+    transition: all .3s ease;
+    color: #d8d8d8;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav li a:hover {
+    color: rgb(36, 106, 135);
+}
+
+.cart {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    padding: 30px;
+    column-gap: 10px;
+}
+
+/*Left-sadbar*/
+
+.sadbar {
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border-radius: 5px;
+    padding: 16px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.categorie {
+    cursor: pointer;
+    color: #050505;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.categorie-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.center-checkbox {
+    transition: all .3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.center-checkbox.active {
+    display: flex;
+}
+
+label {
+    width: 100%;
+    font-size: 19px;
+    color: #050505;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-checkbox input[type='checkbox'] {
+    width: 19px;
+    height: 19px;
+}
+
+/*Products-Card*/
+
+.products {
+    /*background-color: #e1e1e1;*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.card {
+    transition: all .4s ease-in-out;
+    background-color: #ffffff;
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 15px;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.12));
+    border-radius: 4px;
+}
+
+.card:hover {
+    filter: drop-shadow(0 4px 5px rgb(157, 157, 157));
+}
+
+.cardCategorie {
+    color: rgb(90, 90, 90);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.imgcard {
+    max-width: 500px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.title {
+    color: #050505;
+}
+
+.price {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.btnAdd {
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: rgb(22, 182, 22);
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.15));
+}
+
+.btnAdd:hover {
+    background-color: rgb(4, 158, 4);
+}
+
+footer {
+    background-color: #050505;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.nav-footer li a {
+    color: grey;
+}
+
+@media (max-width: 970px) {
+
+    main {
+        padding: 30px 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+    
+    input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+
+    .products {
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sadbar {
+        max-width: 160px;
+        width: 100%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 230px);
+    }
+}
+
+@media (max-width: 660px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .sadbar {
+        max-width: 600px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .categorie {
+        font-size: 12px;
+    }
+
+    .center-checkbox label {
+        font-size: 11px;
+    }
+
+    input[type="checkbox"] {
+        width: 10px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .title {
+        font-weight: 400;
+    }
+    
+    .title, .price, .btnAdd {
+        font-size: 11px;
+    }
+
+    .imgcard {
+        height: 90px;
+        object-fit: contain;
+    }
+
+    .btnAdd {
+        padding: 2px;
+        line-height: 18px;
+    }
+
+}
+
+@media (max-width: 606px) {
+
+    header {
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+    
+}
+
+@media (max-width: 402px) {
+    main {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 475px) {
+
+    .sadbar {
+        max-width: 290px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 361px) {
+    
+    .card {
+        max-width: 130px;
+    }
+
+    .title, .price, .btnAdd, .cardCategorie {
+        font-size: 9px;
+    }
+
+    .imgcard {
+        height: 70px;
+    }
+}

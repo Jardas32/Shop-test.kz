@@ -1,0 +1,84 @@
+
+     [
+        {
+          "id": 1,
+          "img": "imgproduct/aphon14.jpeg",
+          "title": "Apple iPhone 14",
+          "price": 346765 ,
+          "quantity": 1,
+          "categorie": "Смартфоны"
+        },
+        {
+          "id": 2,
+          "img": "imgproduct/vivoBook.jpeg",
+          "title": "Ноутбук ASUS VivoBook",
+          "price": 328799,
+          "quantity": 1,
+          "categorie": "Ноутбуки"
+        },
+        {
+          "id": 3,
+          "img": "imgproduct/tv.jpg",
+          "title": "Samsung 55\"",
+          "price": 689990,
+          "quantity": 1,
+          "categorie": "Телевизоры"
+        },
+        {
+          "id": 4,
+          "img": "imgproduct/redmi.jpg",
+          "title": "Redmi A5 4 ГБ/128 ГБ черный",
+          "price": 42900,
+          "quantity": 1,
+          "categorie": "Смартфоны"
+        },
+        {
+          "id": 5,
+          "img": "imgproduct/applepink.jpg",
+          "title": "Apple iPhone 15 128Gb",
+          "price": 400600,
+          "quantity": 1,
+          "categorie": "Смартфоны"
+        },
+        {
+          "id": 6,
+          "img": "imgproduct/Yasin.jpg",
+          "title": "Yasin 32E9000 81 см",
+          "price": 53700,
+          "quantity": 1,
+          "categorie": "Телевизоры"
+        },
+        {
+          "id": 7,
+          "img": "imgproduct/lenovo.jpg",
+          "title": "Lenovo 911S Core D 15.6",
+          "price": 376600,
+          "quantity": 1,
+          "categorie": "Ноутбуки"
+        },
+        {
+          "id": 8,
+          "img": "imgproduct/tv4.jpeg",
+          "title": "TCL 65V6B 165 см",
+          "price": 290999,
+          "quantity": 1,
+          "categorie": "Телевизоры"
+        },
+        {
+          "id": 9,
+          "img": "imgproduct/acernitro.jpg",
+          "title": "Acer Nitro V 15 ANV15-41 15.6",
+          "price": 449400,
+          "quantity": 1,
+          "categorie": "Ноутбуки"
+        },
+        {
+          "id": 10,
+          "img": "imgproduct/tvpfolips.jpg",
+          "title": " Philips 55PQT8169/98 140 см",
+          "price": 234700,
+          "quantity": 1,
+          "categorie": "Телевизоры"
+        }
+    ]
+
